@@ -1,0 +1,123 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    border: none; outline: none;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container{
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+}
+
+
+.status{
+    width: 25%;
+    background: #f3f3f3;
+    position: relative;
+}
+
+
+.status:nth-child(even){
+    background: #e9e9e96b;
+}
+
+
+.status h1{
+    background: #343434;
+    color: #f3f3f3;
+    padding: 0.5rem 1rem;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#add_btn{
+    background: #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+#add_btn:hover{
+    background: #aaa;
+}
+
+.todo{
+    background: #666;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    position: relative;
+    transition: all 0.2s linear;
+}
+
+.todo .close{
+    position: absolute;
+    top: 0; right: 1rem;
+}
+
+.close{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.modal{
+    z-index: 1000;
+    width: 450px;
+    position: fixed;
+    top: -50%;
+    left: calc(50% - 225);
+    transition: top 0.3s linear;
+}
+
+.modal.active{
+    top: 15%;
+}
+
+.modal .header{
+    font-size: 1.5rem;
+    background: #666;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.modal input[type="text"]{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background: #999;
+}
+
+
+.modal input[type="submit"]{
+    width: 100%;
+    font-size: 1rem;
+    background: gray;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.fall{
+    transform: translateY(8rem) rotate(20deg);
+}

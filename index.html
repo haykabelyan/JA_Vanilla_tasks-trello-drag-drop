@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="modal">
+        <div class="header">
+            <div class="title">
+                Add Todo
+            </div>
+            <span class="close">&times;</span>
+        </div>
+        <div class="body">
+            <input type="text">
+            <input class="crateTodoBtn" type="submit" value="Add Todo">
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <div class="status">
+            <h1>No Status</h1>
+            <button id="add_btn">+add todo</button>
+            <div class="todo" draggable="true">
+                <span>Buy a pizza</span>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+        <div class="status">
+            <h1>Not Started</h1>
+        </div>
+        <div class="status">
+            <h1>In Process</h1>
+        </div>
+        <div class="status">
+            <h1>Complated</h1>
+        </div>
+    </div>
+
+
+    <script src="lab.js"></script>
+</body>
+</html>
